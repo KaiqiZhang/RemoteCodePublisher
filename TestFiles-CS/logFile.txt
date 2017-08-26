@@ -1,0 +1,19 @@
+
+                                      CodeAnalysis - Version 1.4
+    ==============================================================================================
+     Sat Mar  4 11:26:16 2017
+     Path: "C:\Users\Kaiqi Zhang\OneDrive\ÎÄµµ\CSE687-OOD\Project2HelpS17\CodeAnalyzerEx\TestFiles-CS"
+     Args: *.h, *.cpp, *.cs, /a, /r, /f
+                                                                               
+
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+
+              public data: Program.cs : 11 - class Program
+                public int aPublicDataMember = 3 ; 
+
+
+    searched     7 dirs
+   processed     5 files

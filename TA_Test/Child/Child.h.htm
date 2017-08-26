@@ -1,0 +1,135 @@
+<!----------------------------------------------------------------------------
+  Child.h.htm
+  Published Sun May  7 00:00:29 2017
+  Kaiqi Zhang, CSE687 - Object Oriented Design, Spring 2017
+----------------------------------------------------------------------------->
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="..\template.css">
+  <script src="..\template.js"></script>
+</head>
+<body>
+  <h3>Child.h</h3>
+  <hr />
+  <div class="indent">
+    <h4>Dependencies:</h4>
+  </div>
+  <hr />
+<pre>
+  1      #ifndef CHILD_H
+  2      #define CHILD_H
+  3      
+  4      #include &ltiostream&gt
+  5      #include &ltvector&gt
+  6      #include &ltmap&gt
+  7      
+  8      
+  9      int globalData = 10;
+ 10      
+ 11      namespace ChildTest {
+ 12      	
+</pre>
+<pre id="1" onclick="btn(this.id)">
+ 13 [-]  	struct element {
+ 14  |   		std::string name, type;
+ 15  |   		int start_line, end_line;
+ 16  |   		std::vector&ltelement&gt children;
+ 17  -   	};
+</pre>
+<pre id="-1" style="display:none" onclick="btn(this.id)">
+ 13 [+]  	struct element { ...
+</pre>
+<pre>
+ 18      	enum Numbers { one = 1, two, three, four };
+</pre>
+<pre id="2" onclick="btn(this.id)">
+ 19 [-]  	class Child {
+ 20  |   	public:
+ 21  |   		Child() {};
+ 22  |   		~Child() {};
+</pre>
+<pre id="3" onclick="btn(this.id)">
+ 23 [-]  		void inlineMethod(int a) {
+ 24  |   			int i;
+ 25  |   			for (i = 0; i &lt 2; i++) {
+ 26  |   				std::cout &lt&lt a;
+ 27  |   				if (i == 1)
+ 28  |   				{
+ 29  |   					std::cout &lt&lt i;
+ 30  |   				}
+ 31  |   			}
+ 32  |   			if (i == 1) {
+ 33  |   				std::cout &lt&lt a;
+ 34  |   			}
+ 35  |   			else
+ 36  |   			{
+ 37  |   			}
+ 38  -   		}
+</pre>
+<pre id="-3" style="display:none" onclick="btn(this.id)">
+ 23 [+]  		void inlineMethod(int a) { ...
+</pre>
+<pre>
+ 39  |   		int method1();
+ 40  |   		int method3();
+ 41  |   		int method2()
+</pre>
+<pre id="4" onclick="btn(this.id)">
+ 42 [-]  		{
+ 43  |   			std::cout &lt&lt "Hello OOD";
+ 44  |   			return 0;
+ 45  -   		}
+</pre>
+<pre id="-4" style="display:none" onclick="btn(this.id)">
+ 42 [+]  		{ ...
+</pre>
+<pre>
+ 46  |   		int method4();
+ 47  -   	};
+</pre>
+<pre id="-2" style="display:none" onclick="btn(this.id)">
+ 19 [+]  	class Child { ...
+</pre>
+<pre>
+ 48      	
+ 49      
+ 50      
+</pre>
+<pre id="5" onclick="btn(this.id)">
+ 51 [-]  	static void globalFunction() {
+ 52  |   		std::map&ltint, int&gt map = { { 1,1 },{ 2,2 } };
+ 53  |   		while (true) {
+ 54  |   			{
+ 55  |   				std::cout &lt&lt "\n Global Function";
+ 56  |   			}
+ 57  |   			break;
+ 58  |   		}
+ 59  -   	}
+</pre>
+<pre id="-5" style="display:none" onclick="btn(this.id)">
+ 51 [+]  	static void globalFunction() { ...
+</pre>
+<pre>
+ 60      }
+ 61      
+</pre>
+<pre id="6" onclick="btn(this.id)">
+ 62 [-]  static void globalFunction1() {
+ 63  |   	std::map&ltint, int&gt map = { { 1,1 },{ 2,2 } };
+ 64  |   	while (true) {
+ 65  |   		{
+ 66  |   			std::cout &lt&lt "\n Global Function";
+ 67  |   		}
+ 68  |   		break;
+ 69  |   	}
+ 70  -   }
+</pre>
+<pre id="-6" style="display:none" onclick="btn(this.id)">
+ 62 [+]  static void globalFunction1() { ...
+</pre>
+<pre>
+ 71      #endif
+ 72      
+</pre>
+</body>
+</html>

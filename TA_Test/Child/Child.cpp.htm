@@ -1,0 +1,61 @@
+<!----------------------------------------------------------------------------
+  Child.cpp.htm
+  Published Sun May  7 00:00:29 2017
+  Kaiqi Zhang, CSE687 - Object Oriented Design, Spring 2017
+----------------------------------------------------------------------------->
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="..\template.css">
+  <script src="..\template.js"></script>
+</head>
+<body>
+  <h3>Child.cpp</h3>
+  <hr />
+  <div class="indent">
+    <h4>Dependencies:</h4>
+    <a href=".\Child.h.htm">Child.h</a>
+  </div>
+  <hr />
+<pre>
+  1      #include "Child.h"
+  2      #include "Grandparent.h"
+  3      #include &ltiostream&gt
+  4      
+  5      using namespace ChildTest;
+  6      
+</pre>
+<pre id="1" onclick="btn(this.id)">
+  7 [-]  int Child::method1() {
+  8  |   	std::cout &lt&lt "From Method 1";
+  9  |   	return 0;
+ 10  -   }
+</pre>
+<pre id="-1" style="display:none" onclick="btn(this.id)">
+  7 [+]  int Child::method1() { ...
+</pre>
+<pre>
+</pre>
+<pre id="2" onclick="btn(this.id)">
+ 11 [-]  int Child::method3() {
+ 12  |   	std::cout &lt&lt "From Method 3";
+ 13  |   	return 0;
+ 14  -   }
+</pre>
+<pre id="-2" style="display:none" onclick="btn(this.id)">
+ 11 [+]  int Child::method3() { ...
+</pre>
+<pre>
+</pre>
+<pre id="3" onclick="btn(this.id)">
+ 15 [-]  int Child::method4() {
+ 16  |   	std::cout &lt&lt "From Method 4";
+ 17  -   	return 0;
+</pre>
+<pre id="-3" style="display:none" onclick="btn(this.id)">
+ 15 [+]  int Child::method4() { ...
+</pre>
+<pre>
+ 18      }
+</pre>
+</body>
+</html>
